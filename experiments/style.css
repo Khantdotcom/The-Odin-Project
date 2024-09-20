@@ -1,0 +1,26 @@
+
+@font-face {
+    font-family: 'BigParty4Blue';
+    src: url('bigparty4blue-font/misc/BigParty4Blue-0f5b.woff2') format('woff2');
+}
+div#intro {
+   font-family: 'BigParty4Blue';
+   background-color: antiquewhite;
+   font-size: 4rem;
+}
+
+#testing{
+    width: 100%;
+    height: 10vh;
+    font: 3rem;
+}
+
+.navigation{
+    display: contents;
+}
+
+.many{
+    height: 100rem;
+    margin: 100rem;
+    padding: 100rem;
+}
