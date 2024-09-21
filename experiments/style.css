@@ -36,3 +36,15 @@ table{
 td,th{
     border:  0.1rem solid aqua;
 }
+.navigation{
+  display: inline-flexbox;
+}
+
+body{
+  background:linear-gradient(90deg,blue,red)
+}
+
+:root{
+  --calu : white
+}
+/*root should be variable base

@@ -14,3 +14,7 @@ toggleButton.onclick = function(){
         editor.setAttribute("contenteditable", "true");
     }
 };
+document.addEventListener("DOMContentLoaded", function() {
+    let ratingTemplate = document.getElementById("set_rating").content.cloneNode(true);
+    document.body.appendChild(ratingTemplate);
+});
