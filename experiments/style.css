@@ -24,3 +24,15 @@ div#intro {
     margin: 100rem;
     padding: 100rem;
 }
+
+.navigation .linkk a:not([data-complete = "true"]) a {
+    display: none;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+td,th{
+    border:  0.1rem solid aqua;
+}
