@@ -1,3 +1,7 @@
+:root{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight:bold;
+}
 legend {
     text-align: center;
 }
@@ -9,7 +13,7 @@ body {
 }
 
 header {
-    background-color: aqua;
+    background-color: green;
 }
 
 footer {
@@ -19,7 +23,7 @@ footer {
 }
 
 main {
-    background-color: aquamarine;
+
 }
 
 svg{
@@ -31,8 +35,9 @@ svg{
 #main-search-bar{
     background-color: lightgray;
     border-radius: 1rem;
-    width: 20%;
+    width: 60%;
     height: 1rem;
+    border-color: transparent;
 }
 
 .search-bar{
@@ -40,18 +45,50 @@ svg{
     flex-flow: row wrap;
     background-color: antiquewhite;
     justify-content: center;
+    align-items: center;
 }
 
 .display-button{
     display: flex;
     flex-flow: row wrap;
-    background-color: blueviolet;
+
 }
 
-.display-button input{
-    flex: 1 2 auto;
-    border-radius: 2rem;
+.display-button-actions{
+    display: flex;
+    flex-flow: row wrap;
+    width : 500px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.action-buttons button{
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.display-button-actions input{
+    border-radius: 3rem;
+    background-color: cyan;
     max-height: 2rem;
-    max-width: 5rem;
-    margin: 1rem;
+    color: white;
+    border-color: transparent;
+}
+
+.search-bar{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.action-buttons{
+    display: flex;
+    width: 300px;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+search{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
 }
