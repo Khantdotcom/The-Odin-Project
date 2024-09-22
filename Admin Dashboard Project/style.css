@@ -1,0 +1,57 @@
+legend {
+    text-align: center;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+}
+
+header {
+    background-color: aqua;
+}
+
+footer {
+    background-color: blanchedalmond;
+    grid-row: 2;
+    grid-column: 1 / -1;
+}
+
+main {
+    background-color: aquamarine;
+}
+
+svg{
+    height: 1rem;
+    width: 1rem;
+}
+
+
+#main-search-bar{
+    background-color: lightgray;
+    border-radius: 1rem;
+    width: 20%;
+    height: 1rem;
+}
+
+.search-bar{
+    display: flex;
+    flex-flow: row wrap;
+    background-color: antiquewhite;
+    justify-content: center;
+}
+
+.display-button{
+    display: flex;
+    flex-flow: row wrap;
+    background-color: blueviolet;
+}
+
+.display-button input{
+    flex: 1 2 auto;
+    border-radius: 2rem;
+    max-height: 2rem;
+    max-width: 5rem;
+    margin: 1rem;
+}
