@@ -1,0 +1,35 @@
+.add-button{
+    border: 1px solid bisque;
+    width: 200px;
+    border-radius: 1rem;
+}
+
+.add-button span{
+    font-size: 20px;
+}
+
+
+.dialog-input{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    height: 200px;
+}
+
+.input-field{
+    display: flex;
+    flex-flow: column;
+    border: 1px solid aliceblue;
+}
+
+.display-area{
+    background-color: aliceblue;
+    display: flex;
+    flex-flow: row-reverse wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.new_area{
+    background-color: aqua;
+}
