@@ -12,6 +12,7 @@
 
     set template(value){
       let reg_exp = new RegExp(/(?=.*h)(?=.*m)(?=.*s)/);
+      //(?=) means order doesn't matter in the string, .* is any character before//
       if (!reg_exp.test(value)) {
         alert("Fill The Valid Format");
       } else{
@@ -24,6 +25,7 @@
   
       let hours = date.getHours();
       if (hours < 10) hours = '0' + hours;
+      //to display in two digits display
   
       let mins = date.getMinutes();
       if (mins < 10) mins = '0' + mins;
@@ -35,6 +37,7 @@
         .replace('h', hours)
         .replace('m', mins)
         .replace('s', secs);
+        //matches the place where it needs to display 
   
       console.log(output);
     }
@@ -47,7 +50,6 @@
       this.render();
       this.timer = setInterval(this.render, 1000);
     }
-  
   }
   
   let clock = new Clock();
