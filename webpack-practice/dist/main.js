@@ -126,7 +126,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles.css */ \"./src/styles.css\");\n/* harmony import */ var _greeting_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./greeting.js */ \"./src/greeting.js\");\n\n\n// index.js\n\n\n\nconsole.log(_greeting_js__WEBPACK_IMPORTED_MODULE_1__.greeting);\n\n\n\n//# sourceURL=webpack://webpack-practice/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles.css */ \"./src/styles.css\");\nObject(function webpackMissingModule() { var e = new Error(\"Cannot find module './pfp.jpg'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\n/* harmony import */ var _greeting_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./greeting.js */ \"./src/greeting.js\");\n\n\n// index.js\n\n\n\n\nconsole.log(_greeting_js__WEBPACK_IMPORTED_MODULE_2__.greeting);\n\nconst image = document.createElement(\"img\");\nimage.src = odinImage;\n   \ndocument.body.appendChild(image);\n\n\n//# sourceURL=webpack://webpack-practice/./src/index.js?");
 
 /***/ })
 
