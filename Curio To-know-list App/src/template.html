@@ -6,8 +6,24 @@
     <title>Document</title>
 </head>
 <body>
+    <dialog id="topic-dialog">
+        <legend>Add your curio-topic and start learning!</legend>
+        <form method="dialog">
+            <div class="dialog-input">                
+                <div class="input-field">                
+                    <label for="book-title">Curio-topic</label>
+                    <input type="text" id="topic-name" required>
+                </div>
+            </div>
+            <div class="dialog-button">
+                <button id="cancel-button" type="reset">Cancel</button>
+                <button id="confirm-button" type="submit">Confirm</button>
+            </div>
+        </form>
+    </dialog>
     <div class="display-area" id="display-area"> 
-        <button class="add-button" id="addbutton" type="button" >Add Your Book Here<br><span class="plus-icon">+</span></button>
+        <button class="add-button" id="addbutton" type="button" >What are you learning lately<br><span class="plus-icon">+</span></button>
     </div>
+
 </body>
 </html>

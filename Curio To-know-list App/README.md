@@ -10,6 +10,11 @@ Features
 
 
 Properties
-1. Task - Name, Left Time (due time - present), Reflection(user-content)
+1. curio - Name, Left Time (due time - present), Reflection(user-content)
 
 2. Topic - Name
+
+Breakdown
+1. Topic add 
+2. json data structure - topic : curio[etc ]
+3. curio element - time module
