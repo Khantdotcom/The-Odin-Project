@@ -21,3 +21,11 @@
     width: 100%;
 }
 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #282c34;
+    margin: 0;
+}

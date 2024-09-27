@@ -49,9 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function CurioArea_create(locaiton){
         const curio_div = document.createElement("div");
-        curio_div.classList.add("curio_div")
-        new_curio.classList.add("curio");
-        curio_div.appendChild(new_curio);
+        curio_div.classList.add("curio_div");
         locaiton.appendChild(curio_div);
     };
     function Curio_add(curioitem_name){
@@ -59,8 +57,4 @@ document.addEventListener("DOMContentLoaded", () => {
         curio_input.type = "checklist";
         curio_input.textContent= `${curioitem_name}`;
     };
-
-    
-
-
 });
