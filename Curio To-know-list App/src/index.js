@@ -1,43 +1,30 @@
 document.addEventListener("DOMContentLoaded", () => {
+    //add diplay
+    const main_json = {};
     const display_area = document.getElementById("display-area");
     const addButton = document.querySelector(".add-button");
-    const dialog = document.querySelector("dialog");
-
-    const topic = document.getElementById("topic-name");
-
-    //data structure
-    const JsonMain = {};
-    function JsonConstruct() {
-        return {"Topic":{
-            "topic-name" : "gg",
-            "curio-list" : [{"curio":
-    const cancelButton = document.getElementById {"name": "Meaning of life", "priority": "urgent", "date": something}}]}};
-    };
-("cancel-button");
-    const confirmButton = document.getElementById("confirm-button");
 
     addButton.addEventListener("click", () => {
         dialog.showModal();
     });
+    //dialog Pop-up
+    const dialog = document.querySelector("dialog");
+    const topic = document.getElementById("topic-name");
+    const cancelButton = document.getElementById("cancel-button");
+    const confirmButton = document.getElementById("confirm-button");
 
     confirmButton.addEventListener("click",() =>{
         //add append data to json a function
+        TopicAddToJson();
+        TopicDisplay();
         Clearvalues();
-        
-        Object.setPrototypeOf(AddBook,New_book);
-        confirm_books = new NewTopic();
-        Display_books();
-        console.log(all_books);
+        dialog.close();
     });
 
     cancelButton.addEventListener("click",() =>{
         Clearvalues();
         dialog.close();
     });
-
-    function TopicAddToJson(){{
-        contents
-    }};
 
     function Clearvalues() {
         topic.value = '';
@@ -47,11 +34,20 @@ document.addEventListener("DOMContentLoaded", () => {
         new_area = document.createElement("div");
         new_area.classList.add("new_area");
         display_area.appendChild(new_area);
+        new_area.textContent = topic.value;
         // element add functions 
     }
+
+    //data structure
+
+    function TopicAddToJson(){{
+        main_json[topic.value] = {};
+    }};
 
     function CurioAdd(){
 
     };
+
+
 
 });
