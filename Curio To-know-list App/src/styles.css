@@ -10,8 +10,8 @@
     background-color: antiquewhite;
     display: flex;
     flex-flow: column wrap;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: flex-start;
+    align-items: center;
     height: 20vh;
     width: 20vb;
     

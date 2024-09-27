@@ -51,10 +51,26 @@ document.addEventListener("DOMContentLoaded", () => {
         const curio_div = document.createElement("div");
         curio_div.classList.add("curio_div");
         locaiton.appendChild(curio_div);
+
+        const curio_button = document.createElement("button");
+        curio_button.addEventListener("click", () =>{
+            Curio_add(locaiton);
+        });
+        curio_div.appendChild(curio_button);
     };
-    function Curio_add(curioitem_name){
+
+    function New_dialog(locaiton) {
+        const new_dialog = document.createElement("dialog");
+        const curio_dialog_input = document.createElement("input");
+        curio_dialog_input.type = "text";
+        new_dialog.appendChild(curio_dialog_input);
+        location.appendChild(new_dialog);
+    };
+
+    function Curio_add(locaiton){
         const curio_input = document.createElement("input");
-        curio_input.type = "checklist";
+        curio_input.type = "checkbox";
         curio_input.textContent= `${curioitem_name}`;
+        locaiton.appendChild(curio_input);
     };
 });
