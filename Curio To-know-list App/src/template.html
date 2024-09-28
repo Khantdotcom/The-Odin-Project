@@ -7,18 +7,21 @@
 </head>
 <body>
     <dialog id="topic-dialog">
-        <legend>Add your curio-topic!</legend>
         <form method="dialog">
+        <fieldset>
+        <legend>Add your curio-topic!</legend>
+        
             <div class="dialog-input">                
-                <div class="input-field">                
+                <div class="input-field">           
                     <label for="book-title">Curio-topic</label>
-                    <input type="text" id="topic-name" required>
+                    <input type="text" id="topic-name" name="topic-name" required>
                 </div>
             </div>
             <div class="dialog-button">
                 <button id="cancel-button" type="reset">Cancel</button>
                 <button id="confirm-button" type="submit">Confirm</button>
             </div>
+        </fieldset>
         </form>
     </dialog>
     <div class="display-area" id="display-area"> 
