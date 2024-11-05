@@ -58,4 +58,13 @@ document.addEventListener("DOMContentLoaded", () => {
     function TopicAddToJson(){
         main_json[topic.value] = {};
     };
+
+    function DropdownMenu(parent,child){
+        child.addEventListener("click", () =>{
+            parent.classList("dropdown_menu")
+            document.body.appendChild(child);
+        }); 
+    };
+
+    
 });
