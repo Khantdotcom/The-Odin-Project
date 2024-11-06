@@ -59,12 +59,13 @@ document.addEventListener("DOMContentLoaded", () => {
         main_json[topic.value] = {};
     };
 
-    function DropdownMenu(parent,child){
-        child.addEventListener("click", () =>{
-            parent.classList("dropdown_menu")
-            document.body.appendChild(child);
-        }); 
-    };
+    //Dropdown Menu
+    function Toggle(){
+            element.style.display = element.style.display == 'none'? "inline":"none";
+    }; 
+
+    child.addEventListener("click", Toggle());
+
 
     
 });
