@@ -20,3 +20,18 @@ function Fibonacci_recur(arry, target){
         return Fibonacci_recur(arry,target);
     };}
 console.log(Fibonacci_recur([0,1],8));
+
+//linked lists
+class Linked_list{
+    
+    append(new_){
+        
+    };
+    };
+
+class Node{
+    constructor(){
+        this.value = null;
+        this.nextNode = null;
+    }
+};
