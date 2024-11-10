@@ -6,10 +6,10 @@
 //display cv >> data storage structure
 //steps
 
-export default function MyInput({name_id,label_for,type,required,size,className}){
+export function MyInput({name_id,label_for,type,required,size,className}){
     return (
         <>
-        <label for="name_id">
+        <label htmlFor={name_id}>
             {label_for}
         </label>
         <input 
@@ -17,14 +17,14 @@ export default function MyInput({name_id,label_for,type,required,size,className}
         type={type}
         className={className}
         size={size}
-        required ={required? true:false}
+        required ={required}
         >
         </input>
         </>
     )
 };
 
-export default function MyButton({type,onClick,className}){
+export function MyButton({type,onClick,className}){
     return(
         <button className={className} onClick={onClick}>
             {type}
