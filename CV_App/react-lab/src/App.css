@@ -36,3 +36,13 @@
 .card {
   padding: 2em;
 }
+
+#input-area{
+  background-color:beige;
+  display: flex;
+  flex-direction: column;
+}
+
+#text{
+  display: flex;
+}

@@ -8,8 +8,8 @@
 
 export function MyInput({name_id,label_for,type,required,size,className}){
     return (
-        <>
-        <label htmlFor={name_id}>
+        <div style={{display:"flex", flexDirection:"column"}}>
+            <label htmlFor={name_id}>
             {label_for}
         </label>
         <input 
@@ -20,7 +20,8 @@ export function MyInput({name_id,label_for,type,required,size,className}){
         required ={required}
         >
         </input>
-        </>
+        </div>
+
     )
 };
 
