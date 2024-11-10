@@ -1,30 +1,33 @@
 //input
-//list for input, css style
-
+//list for each page input, css style
 //validation
-//button, list of button needed 
-//example data structure
-//section 
-//display cv
-//steps
-export default function MyButton({count,onClick}){
-    return(
-    <button onClick={onClick}>
-        {count}
-    </button>)
-}
 
-function MyInput({label_for,type,required,size}){
+//button, list of button needed
+//display cv >> data storage structure
+//steps
+
+export default function MyInput({name_id,label_for,type,required,size,className}){
     return (
         <>
-        <label>
+        <label for="name_id">
             {label_for}
         </label>
         <input 
+        name={name_id}
         type={type}
-        className="user_input"
-        size={size}> 
+        className={className}
+        size={size}
+        required ={required? true:false}
+        >
         </input>
         </>
     )
 };
+
+export default function MyButton({type,onClick,className}){
+    return(
+        <button className={className} onClick={onClick}>
+            {type}
+        </button>
+    )
+}

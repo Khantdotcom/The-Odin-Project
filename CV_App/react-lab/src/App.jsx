@@ -7,7 +7,14 @@ import MyButton from './components'
 
 function App() {
   const [count, setCount] = useState(0);
-  
+  const 
+
+  function ExtractData({input}){
+    return(
+        input.value
+    )
+}
+
   function handler(){
     setCount(count+1)
   }
