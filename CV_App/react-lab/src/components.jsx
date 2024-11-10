@@ -25,10 +25,10 @@ export function MyInput({name_id,label_for,type,required,size,className}){
     )
 };
 
-export function MyButton({type,onClick,className}){
+export function MyButton({name_id,onClick,className}){
     return(
         <button className={className} onClick={onClick}>
-            {type}
+            {name_id}
         </button>
     )
 }

@@ -12,8 +12,17 @@ function App() {
     { name_id: 'ph', label_for: 'Phone Number', type: 'number', required: true, size: 15, className: 'ph-num' },   
   ];
 
-  return (
+  function Submit(){
+     
+  }
+  function Cancel(){
 
+  }
+  const button_list = [{name_id:'submit', function:Submit(),className:'button'},
+    {name_id:'cancel',function:Cancel(),className:'button'}
+  ]
+
+  return (
     <div className='input-area'>
     <fieldset>    
       {input_list.map((input)=>(
@@ -25,9 +34,17 @@ function App() {
       size = {input.size}
       label_for={input.label_for}
       className={input.className}/>
-    ))}</fieldset>
+      ))}
+      </fieldset>
+      {button_list.map((button)=>(
+        <MyButton
+          key = {button.name_id}
+          name_id = {button.name_id}
+          onClick={button.function}
+          className={button.className}
+        />
+      ))}
     </div>
-  )
-}
+  )}
 
 export default App
