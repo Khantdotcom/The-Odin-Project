@@ -11,12 +11,13 @@ function App() {
     { name_id: '_lname', label_for: 'Last Name', type: 'text', required: true, size: 15, className: 'text' },
     { name_id: 'ph', label_for: 'Phone Number', type: 'number', required: true, size: 15, className: 'ph-num' },   
   ];
+  const cv_display = []
 
   function Submit(){
-     
+     cv_display.append([MyInput.value])
   }
   function Cancel(){
-
+    MyInput.value.clear
   }
   const button_list = [{name_id:'submit', function:Submit(),className:'button'},
     {name_id:'cancel',function:Cancel(),className:'button'}
