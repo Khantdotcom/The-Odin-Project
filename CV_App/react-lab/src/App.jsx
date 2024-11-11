@@ -33,9 +33,8 @@ function App() {
       required={input.required}
       size = {input.size}
       label_for={input.label_for}
-      className={input.className}/>
-      ))}
-      </fieldset>
+      className={input.className}/>))}
+    </fieldset>
       {button_list.map((button)=>(
         <MyButton
           key = {button.name_id}
