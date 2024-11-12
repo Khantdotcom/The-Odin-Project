@@ -1,8 +1,8 @@
+
+
 function Greeting(){
     return <h1>&quot;I am so excited for learning&quot;</h1>;
 }
-
-export default Greeting
 
 function Profile({person}){
     return(
@@ -32,4 +32,23 @@ function Item({ispacked, name}){
     );}
 
 //props, conditional , mapping list// state
+//state and rendering 
 
+export function getFinalState(baseState, queue) {
+    let finalState = baseState;
+    //for (let update of queue){
+    //if(typeof update==='function'{
+    //finalState = update(finalState)})} else return finalState=update
+    //logic-diff type in list, use the function
+  
+    for (let i = queue.length - 1; i >= 0; i--) {
+      if (queue[i] === "n => n+1") {
+        finalState += 1;
+      } else {
+        finalState = queue[i];
+        break;
+      }
+    }
+    return finalState;
+  }
+  
