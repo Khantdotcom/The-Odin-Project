@@ -5,10 +5,10 @@ import './App.css'
 import {MyButton,MyInput} from './components'
 function App() {
   const input_list = [
-    { name_id: 'first_name', label_for: 'First Name', type: 'text', required: true, size: 10, className: 'text',onchange:InputChange},
-    { name_id: 'email', label_for: 'Email', type: 'email', required: true, size: 15, className: 'text',onchange:InputChange},
-    { name_id: 'last_name', label_for: 'Last Name', type: 'text', required: true, size: 15, className: 'text' ,onchange:InputChange},
-    { name_id: 'ph', label_for: 'Phone Number', type: 'number', required: true, size: 15, className: 'ph-num' ,onchange:InputChange},   
+    { name_id: 'first_name', label_for: 'First Name', type: 'text', required: true, size: 10, className: 'text'},
+    { name_id: 'email', label_for: 'Email', type: 'email', required: true, size: 15, className: 'text'},
+    { name_id: 'last_name', label_for: 'Last Name', type: 'text', required: true, size: 15, className: 'text'},
+    { name_id: 'ph', label_for: 'Phone Number', type: 'number', required: true, size: 15, className: 'ph-num'},   
   ];
   const [fill_input,setInput] = useState({
     first_name:'', last_name:'',email:'',ph:''
@@ -31,19 +31,22 @@ function App() {
       {input_list.map((input)=>(
       <MyInput 
       key={input.name_id}
-      name_id={input.name_id}
-      type={input.type}
-      required={input.required}
-      size = {input.size}
-      label_for={input.label_for}
-      onChange = {input.onchange}
-      className={input.className}/>))}
+      {...input}
+      //name_id={input.name_id}
+      //type={input.type}
+      //required={input.required}
+      // size = {input.size}
+      // label_for={input.label_for}
+      onChange = {InputChange}
+      // className={input.className}
+      />))}
     </fieldset>
       {button_list.map((button)=>(
         <MyButton
           key = {button.name_id}
-          name_id = {button.name_id}
-          className={button.className}
+          // name_id = {button.name_id}
+          // className={button.className}
+          {...button}
         />
       ))}
       <p>{JSON.stringify(fill_input)}</p>
