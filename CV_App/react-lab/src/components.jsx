@@ -6,7 +6,7 @@
 //display cv >> data storage structure
 //steps
 
-export function MyInput({name_id,label_for,type,required,size,className}){
+function MyInput({name_id,label_for,type,required,size,className,onChange}){
     return (
         <>
         <div style={{display:"flex", flexDirection:"column"}}>
@@ -19,19 +19,21 @@ export function MyInput({name_id,label_for,type,required,size,className}){
     className={className}
     size={size}
     required ={required}
+    onChange={onChange}
     >
     </input>
     </div>
-    <p>{input.value}</p>
     </>
 
     )
 };
 
-export function MyButton({name_id,onClick,className}){
+function MyButton({name_id,onClick,className}){
     return(
         <button className={className} onClick={onClick}>
             {name_id}
         </button>
     )
 }
+
+export {MyInput,MyButton}

@@ -4,20 +4,16 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import {MyButton,MyInput} from './components'
 function App() {
-  const [count, setCount] = useState(0);
   const input_list = [
-    { name_id: 'name', label_for: 'First Name', type: 'text', required: true, size: 10, className: 'text' },
-    { name_id: 'email', label_for: 'Email', type: 'email', required: true, size: 15, className: 'text'},
-    { name_id: '_lname', label_for: 'Last Name', type: 'text', required: true, size: 15, className: 'text' },
-    { name_id: 'ph', label_for: 'Phone Number', type: 'number', required: true, size: 15, className: 'ph-num' },   
+    { name_id: 'first_name', label_for: 'First Name', type: 'text', required: true, size: 10, className: 'text',onchange:InputChange},
+    { name_id: 'email', label_for: 'Email', type: 'email', required: true, size: 15, className: 'text',onchange:InputChange},
+    { name_id: 'last_name', label_for: 'Last Name', type: 'text', required: true, size: 15, className: 'text' ,onchange:InputChange},
+    { name_id: 'ph', label_for: 'Phone Number', type: 'number', required: true, size: 15, className: 'ph-num' ,onchange:InputChange},   
   ];
   const [fill_input,setInput] = useState({
-    first_name:'', last_name:'',email:''
+    first_name:'', last_name:'',email:'',ph:''
   })
 
-  function Submit(e){
-
-  }
 
   function InputChange(e){
     setInput({
@@ -25,11 +21,8 @@ function App() {
       [e.target.name] : e.target.value
      })
   }
-  function Cancel(){
-    MyInput.value.clear
-  }
-  const button_list = [{name_id:'submit', function:Submit(),className:'button'},
-    {name_id:'cancel',function:Cancel(),className:'button'}
+  const button_list = [{name_id:'submit',className:'button'},
+    {name_id:'cancel',className:'button'}
   ]
 
   return (
@@ -43,19 +36,19 @@ function App() {
       required={input.required}
       size = {input.size}
       label_for={input.label_for}
-      onChange = {InputChange}
+      onChange = {input.onchange}
       className={input.className}/>))}
     </fieldset>
       {button_list.map((button)=>(
         <MyButton
           key = {button.name_id}
           name_id = {button.name_id}
-          onClick={button.function}
           className={button.className}
         />
       ))}
-      <p>fill_input</p>
+      <p>{JSON.stringify(fill_input)}</p>
     </div>
   )}
+
 
 export default App
