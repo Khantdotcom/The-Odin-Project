@@ -11,10 +11,19 @@ function App() {
     { name_id: '_lname', label_for: 'Last Name', type: 'text', required: true, size: 15, className: 'text' },
     { name_id: 'ph', label_for: 'Phone Number', type: 'number', required: true, size: 15, className: 'ph-num' },   
   ];
-  const cv_display = []
+  const [fill_input,setInput] = useState({
+    first_name:'', last_name:'',email:''
+  })
 
-  function Submit(){
-     cv_display.append([MyInput.value])
+  function Submit(e){
+
+  }
+
+  function InputChange(e){
+    setInput({
+      ...fill_input,
+      [e.target.name] : e.target.value
+     })
   }
   function Cancel(){
     MyInput.value.clear
@@ -34,6 +43,7 @@ function App() {
       required={input.required}
       size = {input.size}
       label_for={input.label_for}
+      onChange = {InputChange}
       className={input.className}/>))}
     </fieldset>
       {button_list.map((button)=>(
@@ -44,6 +54,7 @@ function App() {
           className={button.className}
         />
       ))}
+      <p>fill_input</p>
     </div>
   )}
 
