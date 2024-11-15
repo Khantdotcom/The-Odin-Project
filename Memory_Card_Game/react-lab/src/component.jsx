@@ -1,6 +1,16 @@
 const fetched_data = [{image:"https",description:'sex',title:'loe'}]
 
 function info_fetch(number_of_cards) {
+   const [data,setData] = useState(null)
+   useEffect(()=>{
+    fetch('https://api.waifu.pics/type/category/nsfw')
+    .then(response => response.json())
+    .then(data => setData(data))
+    .catch(error => console.error('Error Fetching',error));
+   },[]);
+   return(
+    
+   )
     fetched_data.append()
 }
 
@@ -19,7 +29,7 @@ function make_input(game_type){
 function each_card(){
     <>
     <div onclick="game_end()">
-        <img></img>
+        <iframe></iframe>
         <h3></h3>
         <p></p>
     </div>
