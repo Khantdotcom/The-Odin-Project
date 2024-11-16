@@ -14,4 +14,5 @@ november 10 18:25- i feel like i'm making no progress after 5 absolute days of l
 
 1. things about my planning - i just plan, i don't plan how that plan will be executed HOW>. 
 
-2. 
+Action Plans
+1. Start from small.s
