@@ -26,6 +26,7 @@ function make_input(game_type){
 }
 
 //card_component_div with its conditions
+//se
 function each_card(){
     <>
     <div onclick="game_end()">
