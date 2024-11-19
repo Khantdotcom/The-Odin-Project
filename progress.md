@@ -16,3 +16,6 @@ november 10 18:25- i feel like i'm making no progress after 5 absolute days of l
 
 Action Plans
 1. Start from small.s
+
+- disconnected for a while and now i’m back from afk
+- always doubt my knowledge on some subject
