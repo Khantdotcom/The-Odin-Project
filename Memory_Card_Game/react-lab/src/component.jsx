@@ -43,7 +43,7 @@ function random_display(number){
     each_card
 }
 
-game_end(
+function game_end(
     if state of clicked card == 1 >>  
     end_display(lose)
 
@@ -55,11 +55,11 @@ game_end(
     random_display()
 )
 
-best_score_check(
+function best_score_check(
     compare current > state score 
     set score
 )
 
-end_display (condition){
+function end_display (condition){
     console.log('You {condition}')
 }

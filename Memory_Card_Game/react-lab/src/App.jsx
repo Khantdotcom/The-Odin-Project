@@ -3,6 +3,7 @@ import { useState } from 'react';
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
+import PropTypes from 'prop-types';
 
 const App = () =>{
   const [heading,setHeading] = useState("Hi bro!");
