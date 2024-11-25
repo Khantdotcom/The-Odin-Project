@@ -19,3 +19,4 @@ Action Plans
 
 - disconnected for a while and now i’m back from afk
 - always doubt my knowledge on some subject
+- curiocity management system
