@@ -24,3 +24,4 @@ Action Plans
 27th nov, will commit organic ones from now on
 28th, still dodging the tasks tho
 29th, ......
+30th, last day of nov, nothing
