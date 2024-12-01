@@ -5,3 +5,6 @@
     1. **Inspect Others' Work**: Analyze source code and finished products from experienced developers.
 5. **Refine Projects**: Iterative improvement in previous projects.
 6. Learning Journey Documentation: For each project: make inline code or task report in notion
+
+Dec 2024 >> finish odin project, javascript and python roadmap with leetcode
+mini projects + sarnu
