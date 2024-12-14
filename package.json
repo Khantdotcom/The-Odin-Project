@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "nodemon": "^3.1.9",
+    "postman": "^0.2.0"
+  }
+}
